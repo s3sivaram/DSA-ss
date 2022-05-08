@@ -1,0 +1,37 @@
+// HLD
+Points to ponder at the start...
+
+1) who are the users of the system?
+    (e.g) food delivery app- endusers or Hotel owners or management....
+2) what are the modules involved in the system  and which one to focus now?
+    (e.g) food delivery tracking or
+          geo-location tracking for the nearest hotel list etc...
+3) what are the trade offs for CAP ?
+   consistency, availability, performance,
+
+4) level of scaling of the system - global or local?
+
+5) Sequence of events in each module.
+
+6) API design.
+
+7) Monolith vs. Microservices based on scale of the system ....
+
+8) Communication protocols - http / websocket / mqtt / grpc etc.
+
+9) Data capacity - how much data can be stored in the system?
+
+10) Datastore decision - relational / NoSQL / etc.
+
+11) Scaling the system: vertical or horizontal?
+
+12) performance - caching / compression / sharding.
+
+13) Diaster recovery - how to handle the failure? - Fail safe & fail proof
+
+14) How to handle the data loss?
+
+15) Health check - how to check the health of the system?
+16) Logging & monitoring the system.
+
+
