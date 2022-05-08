@@ -1,0 +1,3 @@
+Bracket pair identification:
+   LeftBracketposition = stacklenth-2
+   RightBracketposition = stacklenth-1
