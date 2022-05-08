@@ -1,0 +1,20 @@
+---------------------
+Permutations in String:N!.
+---------------------
+SubArray: contigous part of array.
+    -No of non empty SubArrays= n*(n+1)/2.
+
+Subsequence: may not be contigous but the order has to be maintained.
+    -No of non empty SubSequences= 2^n-1.
+    - no of SubSequences = 2^n.
+
+---------------------
+Graph:
+    Vertices in a Graph:V
+    Full Dense Graph will have V * V-1  edges.
+
+---------------------
+
+Time complexity:
+1) array
+2) set 
