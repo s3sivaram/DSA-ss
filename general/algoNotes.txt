@@ -1,3 +1,13 @@
+1)
 Bracket pair identification:
    LeftBracketposition = stacklenth-2
    RightBracketposition = stacklenth-1
+----------------------------------------
+2) Rotate an array at kth position (e.g.2):
+   [1,2,3,4,5]
+   - reverse the array -[5,4,3,2,1]
+   split the array into two parts at kth position
+   - part1=[5,4] and part2=[3,2,1]
+   reverse part1 and part2 and merge them.
+   [4,5,1,2,3]
+   --------------------------------------
