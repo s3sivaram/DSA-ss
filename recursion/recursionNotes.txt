@@ -18,3 +18,18 @@ Graph:
 Time complexity:
 1) array
 2) set 
+
+--------------------------------------------------
+N-Queens: nxn matrix board.
+rules:
+- every column should have 1 queen.
+- every row should have 1 queen.
+- no two queens should be in same row or column.
+- no two queens should be in same diagonal.
+
+Hash map for checking if a queen is safe:-
+rowMap: map for each row taken.
+lower diagonalMap(ldMap): create a map of size 2n-1.hash it for (row+column).
+upper diagonalMap(udMap): create a map of size 2n-1.hash it for (n-1)+(column-row).
+Refer:- youtube channel - "take u forward".
+--------------------------------------------------
