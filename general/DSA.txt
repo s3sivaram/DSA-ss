@@ -1,0 +1,51 @@
+Heap:
+
+Array representation (0 is the first element):
+Node at index i --> parent of i is Floor(i-1)/2.
+Node at index i --> left child of i is 2i + 1.
+Node at index i --> right child of i is 2i + 2.
+
+
+- Heap is a complete binary tree.
+- Max heap is a complete binary tree with the largest element at the root and all the descendants are smaller than the root.
+- Min heap is a complete binary tree with the smallest element at the root and all the descendants are larger than the root.
+
+Max Heap Insertion: (logn)
+- Insert element at the end of the array.
+- Compare the new element with its parent.
+- If the new element is larger than its parent, swap them.
+- Repeat until the new element is smaller than its parent.
+
+Max Heap deletion: (logn)
+- Delete the root element (first element in the array).
+- place the last node (last element in the array) at the root node(first element in the array).
+- Compare the new root with its biggest children.
+- If the new root is smaller than its biggest children, swap them.
+- Repeat the process of comparing each node with its biggest children and swap them if they are smaller.
+
+Heap sort:(nlogn)
+- Create a max heap from the array.
+- Delete every element from the heap and place it in the array.
+- the array will be a sorted one.
+
+
+Heapify:(max heap)  - (O(n))
+- scan the matrix from right to left.
+- for each element, if the element does not have a child(meaning it is a leaf), then skip it.
+- if the element has a child, then compare the element with its parent.
+- if the element is smaller than its parent, then swap them.
+- repeat the process until the each child is smaller than its parent.
+
+Heap creation : (nlogn)
+
+Heapify(O(n)) < heap creation O(nlogn)
+----------------------------------------------------
+Tree:
+
+Full Binary tree:
+ -number of nodes in full binary tree of height h = 2^h - 1.
+ -A complete binary tree when represented in an array will not have any gaps in the array.
+ - height of a complete binary tree will be logn.
+
+-------------------------------------
+
