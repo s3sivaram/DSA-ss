@@ -8,17 +8,6 @@ Subsequence: may not be contigous but the order has to be maintained.
     -No of non empty SubSequences= 2^n-1.
     - no of SubSequences = 2^n.
 
----------------------
-Graph:
-    Vertices in a Graph:V
-    Full Dense Graph will have V * V-1  edges.
-
----------------------
-
-Time complexity:
-1) array
-2) set 
-
 --------------------------------------------------
 N-Queens: nxn matrix board.
 rules:
@@ -33,3 +22,15 @@ lower diagonalMap(ldMap): create a map of size 2n-1.hash it for (row+column).
 upper diagonalMap(udMap): create a map of size 2n-1.hash it for (n-1)+(column-row).
 Refer:- youtube channel - "take u forward".
 --------------------------------------------------
+Time complexity - Recursion.
+
+T(n)=T(n-1)+1  => O(n)
+T(n)=T(n-1)+n => O(n^2)
+T(n)=T(n-1)+logn => O(nlogn)
+T(n)=2T(n-1)+1=> O(2^n))   
+T(n)=3T(n-1)+1=> O(3^n))   
+T(n)=2T(n-1)+n=> O(n2^n))   
+
+
+--------------------------------------------------
+
