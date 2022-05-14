@@ -49,3 +49,25 @@ Full Binary tree:
 
 -------------------------------------
 
+Sort:-
+
+Merge Sort: O(m+n)
+2 way Merge sort: O(nlogn).
+array=[9,3,6,1,2,5,7,4,8]
+first pass :[3,9],[6,1],[2,5],[7,4],[8]
+second pass:[3,6,1,2],[9,5,7,4,8]
+third pass:[3,6,1,2,4,9,5,7,8]
+
+merge sort recursive algorithm:
+lowpointer=0, highpointer=len(array)-1
+mergeSort(array,lowpointer,highpointer)
+if(lowpointer<highpointer){
+    mid=floor((lowpointer+highpointer)/2)
+    left=mergeSort(array,lowpointer,mid)
+    rightmergeSort(array,mid+1,highpointer)
+    merge(left,right)
+}
+
+
+
+-------------------------------------
