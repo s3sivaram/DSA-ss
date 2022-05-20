@@ -31,6 +31,8 @@ T(n)=2T(n-1)+1=> O(2^n))
 T(n)=3T(n-1)+1=> O(3^n))   
 T(n)=2T(n-1)+n=> O(n2^n))   
 
+Check Master's theorem - https://www.youtube.com/abdul bari's channel.
+
 
 --------------------------------------------------
 
