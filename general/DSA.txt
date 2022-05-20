@@ -68,6 +68,56 @@ if(lowpointer<highpointer){
     merge(left,right)
 }
 
+Advantages of merge sort:
+- It is a stable sort - meaning order of the same numbers will not change.
+- it can handle very large data sets.(can take a chunk of data in memory and process it at a time)
 
+cons of mergeSort:
+- not efficient for smaller datasets(takes more time compared to other algorithms like insertion sort-n<15 elements).
+- not an inplace sort.(meaning needs extra space to sort)
+
+space complexity - O(n+logn)
+-------------------------------------
+quick sort:
+best case - O(nlogn)
+worst case - O(n^2)
+-------------------------------------
+Optimal merge pattern:
+- merge smaller sets first and then merge the two sets.
+-------------------------------------
+
+Graph:
+Graph is a collection of nodes and edges.
+G={V,E} vertices, edges.
+edges are directed or undirected.
+spanning tree is a subgraph of the graph that contains all the vertices(v) but v-1 edges.
+A tree should not have cycles.
+
+-------------------------------------
+
+
+Optimization problems:
+
+This can be solved using
+    1. Greedy method.
+        -using the known or proven methods or predefined procedures to solve the problem and not by trying all combinations. eg: krishkal's algorithm , Dijkstra's algorithm (choosing the shortest path at each step).
+        -done in stages by taking in the optimum inputs at each stage.
+    2. Dynamic programming.
+        -trying all possible combinations to find the optimum one.
+    3. Branch and bound.
+
+
+-------------------------------------
+
+Dijkstra algorithm is a greedy algorithm that finds the shortest path between two vertices in a graph.
+It may not work for graphs with negative weights.
+Bellman-Ford algorithm is a greedy algorithm that finds the shortest path between two vertices in a graph with negative weights.
+
+Bellman Ford algorithm: O(n^3)
+- relax all the edges for n-1 times.
+relaxation of an edge v of edge (u,v): 
+min((cost of u + distance of  v), cost of v).
+
+Bellman ford algorithm will give wrong results if there is a negative weighted cycle in the graph and the nodes are relaxed for more than n-1 times.
 
 -------------------------------------
