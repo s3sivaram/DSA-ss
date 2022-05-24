@@ -1,3 +1,16 @@
+Recursion - general:
+
+A recursive function is tail recursive when a recursive call is the last thing executed by the function.
+This will take O(1) space and O(n) time compared to non tail recursive space O(n) and time O(n).
+(e.g)
+function fact(n,incomingValue)
+{
+    if(n==0)
+        return incomingValue;
+    else
+        return fact(n-1,n*incomingValue);
+}
+
 ---------------------
 Permutations in String:N!.
 ---------------------
