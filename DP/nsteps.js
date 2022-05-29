@@ -25,11 +25,11 @@ function nsteps(n, steppath, totalpaths) {
     return 0;
   }
   steppath = steppath + "1";
-  let left = nsteps(n + 1, steppath);
+  let left = nsteps(n + 1, steppath, totalpaths);
   steppath = steppath.slice(0, steppath.length - 1);
 
   steppath = steppath + "2";
-  let right = nsteps(n + 2, steppath);
+  let right = nsteps(n + 2, steppath, totalpaths);
 
   steppath = steppath.slice(0, steppath.length - 1);
   return left + right;

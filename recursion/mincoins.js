@@ -23,23 +23,20 @@ function coins(n, steppath) {
     wronganswers.push(steppath);
     return 100;
   } else {
-    // c3 = c3 + coin3;
-    steppath = steppath + String(coin3);
-    console.log("coin3 steppath before=", steppath);
-    let right2 = coins(n + coin3, steppath);
-    steppath = steppath.slice(0, steppath.length - 1);
-
     // c1 = c1 + coin1;
     steppath = steppath + String(coin1);
     let left = coins(n + coin1, steppath);
-    console.log("coin1 steppath before=", steppath);
     steppath = steppath.slice(0, steppath.length - 1);
     // console.log("steppath after=", steppath);
 
     // c2 = c2 + coin2;
     steppath = steppath + String(coin2);
-    console.log("coin2 steppath before=", steppath);
     let right = coins(n + coin2, steppath);
+    steppath = steppath.slice(0, steppath.length - 1);
+
+    // c3 = c3 + coin3;
+    steppath = steppath + String(coin3);
+    let right2 = coins(n + coin3, steppath);
     steppath = steppath.slice(0, steppath.length - 1);
 
     return Math.min(left, right, right2);
