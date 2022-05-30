@@ -11,3 +11,13 @@ Bracket pair identification:
    reverse part1 and part2 and merge them.
    [4,5,1,2,3]
    --------------------------------------
+3) Javascript search methods:
+   - indexOf() returns the index of the first occurrence of a value in an array.
+   - lastIndexOf()
+   - includes() returns true or false
+   - startsWith()
+   - endsWith()
+   -find()
+   --------------------------------------
+
+4) Use Javascript objects(map) to store unordered data and for quick key-value access.
