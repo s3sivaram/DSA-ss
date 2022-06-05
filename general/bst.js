@@ -9,25 +9,6 @@ class Node {
   show() {
     console.log(`Left= ${this.left} Node(${this.data}) right= ${this.right}`);
   }
-
-  insert(data) {
-    if (this.data == data) {
-      console.log("duplicate data...");
-      return;
-    } else if (this.data > data) {
-      if (this.left) {
-        this.left.insert(data);
-      } else {
-        this.left = new Node(data);
-      }
-    } else {
-      if (this.right) {
-        this.right.insert(data);
-      } else {
-        this.right = new Node(data);
-      }
-    }
-  }
 }
 // ----------BST Class starts....
 class BST {
