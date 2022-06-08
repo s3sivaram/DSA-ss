@@ -43,5 +43,17 @@ Bracket pair identification:
    - 1. find the smallest node in the right subtree and replace it with the deleted node.
    - 2. find the largest node in the left subtree and replace it with the deleted node.
    - then remove the dupicate node.
+
+
+   Traversal of a Binary tree:
+
+   - Inorder traversal:- Left, Root, Right (Root appears between Left and Right). 
+   - Pre order traversal:- Root, Left, Right (Root appears before Left and Right).
+   - Post order traversal:- Left, Right, Root (Root appears after Left and Right).
+
    --------------------------------------
 
+6) Array Tricks:
+    for(i = 0 to length,array[i]) prints array in  order.
+    for(i = 0 to length,array[length-i]) prints array in reverse order.
+   --------------------------------------
