@@ -57,3 +57,8 @@ Bracket pair identification:
     for(i = 0 to length,array[i]) prints array in  order.
     for(i = 0 to length,array[length-i]) prints array in reverse order.
    --------------------------------------
+7) Graph:
+
+   DFS - Depth First Search: Equivalent to Pre order traversal of BST.
+   BFS - Breadth First Search: Equivalent to Level order traversal of BST.
+   Dijkstra algorithm may not work if there are negative weights.
