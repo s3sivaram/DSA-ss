@@ -62,3 +62,13 @@ Bracket pair identification:
    DFS - Depth First Search: Equivalent to Pre order traversal of BST.
    BFS - Breadth First Search: Equivalent to Level order traversal of BST.
    Dijkstra algorithm may not work if there are negative weights.
+
+   Cyclic component in graph:
+   On a BFS traversal if any one of  adjacent nodes of a node is already visited(not the parent node
+   thru which the traversal took place) then it is a Cyclic component.
+
+   Bipartile graph:
+   A graph with odd cycle is not a Bipartile graph.It can not be colored using two colors
+   where same color is not repeated to the nearest node.
+
+   Topological Sorting : is possible only in DAG(Directed Acyclic Graph).
