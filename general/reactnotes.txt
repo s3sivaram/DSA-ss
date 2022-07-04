@@ -1,0 +1,17 @@
+React notes:
+
+Components re-render when
+
+- parent Components re-render, all of its child Components will re-render.
+- when a state change occurs, that component will re-render.
+- when object reference/function re change(which will change on each render if not memoized) Components will re-render.
+
+- all Components(& its corresponding children) that consumes a context will render when that context gets updated.
+
+- useMemo to be used to memoize the child component to prevent re-render due to Object/function reference changes.
+
+
+- to avoid a child component from unneccesary re-rendering(when no props are passed),pass the child component as {children} to the parent than embedding child in the parent directly.
+
+React.memo - memoize to prevent re-render of the child Components when its parent component re-renders.Re-render of child will not happen if the child component's props didn't change from its previous render.
+But React.memo cannot memoize Objects / functions. so in that case use "useMemo" hook.
