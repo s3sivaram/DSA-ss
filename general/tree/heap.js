@@ -1,5 +1,8 @@
 // Javascript implementation of Heap - s3sivaram@gmail.com / 10Jun2022.
+
 /*
+
+  Heap is a non-linear data structure.
     Array implementation of Heap.
 
     Parent=(index-1)/2.
